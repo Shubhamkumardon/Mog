@@ -14,6 +14,6 @@ COPY requirements.txt ./requirements.txt
 RUN pip3 install -r requirements.txt
 COPY start.sh start.sh
 COPY app.py app.py
-EXPOSE 80
+EXPOSE 8080
 RUN chmod +x /app/start.sh
 ENTRYPOINT ["./start.sh"]
